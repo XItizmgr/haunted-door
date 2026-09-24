@@ -31,16 +31,80 @@ body {
   min-height: 100vh;
   background-color: var(--bg-color);
 }
-app {
+#app {
   min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.door-container{
+.door-container {
   width: 320px;
   height: 560px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3d0808;
   perspective: 1000px;
 }
+.door-frame {
+  width: 280px;
+  height: 520px;
+  padding: 12px;
+  background: #242323;
+  border: 4px solid #2a211e;
+  box-shadow:
+    0 0 0 3px #100d0c,
+    0 25px 60px rgba(0, 0, 0, 0.9);
+}
+.door {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #120b0b 0%, #2b1715 45%, #1b0f0f 100%);
+  border: 2px solid #9f9f9f;
+  transition: transform 1.5s ease;
+  transform-origin: left center;
+  box-shadow:
+    inset 8px 0 15px rgba(0, 0, 0, 0.6),
+    inset -8px 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.door-panel {
+  position: absolute;
+  left: 15%;
+  width: 17%;
+  border: 3px solid #160d0d;
+  background: linear-gradient(135deg, #39201c, #1c0f0f);
+  box-shadow:
+    inset 0 0 15px rgba(0, 0, 0, 0.7),
+    0 0 4px rgba(0, 0, 0, 0.8);
+}
+.door-panel-top {
+  top: 10%;
+  height: 30%;
+}
+.door-panel-bottom {
+  bottom: 10%;
+  height: 40%;
+}
+.door-handle {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  width: 30px;
+  height: 60px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.handle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, var(--light-metal-color), var(--color-metal) 45%, #181614 100%);
+  box-shadow:   0 3px 5px rgba(0, 0, 0, 0.8);
+
+}
+
