@@ -11,7 +11,16 @@
       <span class="time">11:59 PM</span>
       <div class="door-container">
         <div class="door-frame">
+          <div class="red-light"></div>
           <div class="door">
+            <div class="scratches s1"></div>
+            <div class="scratches s2"></div>
+            <div class="scratches s3"></div>
+            <div class="scratches s4"></div>
+            <div class="scratches s5"></div>
+            <div class="scratches s6"></div>
+            <div class="scratches s7"></div>
+            <div class="scratches s8"></div>
             <div class="door-panel door-panel-top"></div>
             <div class="door-panel door-panel-bottom"></div>
             <div class="door-handle">
@@ -20,6 +29,19 @@
           </div>
         </div>
         <button class="open-btn">open the door</button>
+      </div>
+      <div class="audio-container">
+        <span class="audio-label">Volume</span>
+        <input type="range" id="audio-controler" min="0" max="100" value="50" />
+        <span id="audio-value">50%</span>
+      </div>
+      <div class="audio">
+        <audio id="door-audio">
+          <source src="dragon-studio-opening-door-450444.mp3" />
+        </audio>
+        <audio id="background-audio" loop>
+          <source src="Loyalty_Freak_Music_-_07_-_A_really_dark_alley(chosic.com).mp3" />
+        </audio>
       </div>
     </div>
     <script type="module" src="/src/main.js"></script>

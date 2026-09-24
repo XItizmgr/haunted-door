@@ -37,6 +37,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position:relative;
+  top: 0  ;
 }
 
 .door-container {
@@ -63,7 +65,7 @@ body {
   height: 100%;
   background: linear-gradient(90deg, #120b0b 0%, #2b1715 45%, #1b0f0f 100%);
   border: 2px solid #9f9f9f;
-  transition: transform 1.5s ease;
+  transition: transform 1s ease;
   transform-origin: left center;
   box-shadow:
     inset 8px 0 15px rgba(0, 0, 0, 0.6),
@@ -104,7 +106,114 @@ body {
   height: 18px;
   border-radius: 50%;
   background: radial-gradient(circle at 30% 30%, var(--light-metal-color), var(--color-metal) 45%, #181614 100%);
-  box-shadow:   0 3px 5px rgba(0, 0, 0, 0.8);
-
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
 }
-
+.scratches {
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  width: 4px;
+  height: 100px;
+  background: #0c0808;
+  /* transform: rotate(12deg); */
+}
+.s1 {
+  left: 70%;
+  height: 150px;
+  transform: rotate(12deg);
+}
+.s2 {
+  left: 60%;
+  height: 105px;
+  transform: rotate(-2deg);
+}
+.s3 {
+  left: 47%;
+  height: 120px;
+  transform: rotate(8deg);
+}
+.s4 {
+  left: 40%;
+  height: 140px;
+  /* transform: rotate(deg); */
+}
+.s5 {
+  left: 44%;
+  height: 100px;
+  top: 5%;
+  /* background-color: red; */
+  transform: rotate(10deg);
+}
+.s6 {
+  left: 52%;
+  height: 100px;
+  top: 5%;
+  /* background-color: red; */
+  transform: rotate(20deg);
+}
+.s7 {
+  left: 57%;
+  height: 100px;
+  top: 5%;
+  /* background-color: red; */
+  transform: rotate(10deg);
+}
+.s8 {
+  left: 65%;
+  height: 100px;
+  top: 5%;
+  /* background-color: red; */
+  transform: rotate(20deg);
+}
+.red-light {
+  position: absolute;
+  bottom: 10px;
+  width: 230px;
+  height: 25px;
+  background-color: var(--color-red);
+  filter: blur(15px);
+  opacity: 0.35;
+  box-shadow:
+    0 0 30px var(--color-red-glow),
+    0 0 60px var(--color-red-dark);
+  z-index: 1;
+}
+.door.open {
+  transform: rotateY(-70deg);
+}
+.audio-container {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 18rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  background-color: #080808;
+  border: 1px solid rgb(90, 87, 87);
+  border-radius: 20px;
+}
+.audio-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  white-space: nowrap;
+  color: white;
+}
+#audio-value {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 15px;
+  min-width: 30px;
+  text-align: right;
+}
+#audio-controler {
+  flex: 1;
+  height: 0.35rem;
+  appearance: none;
+  -webkit-appearance: none;
+  background: #444;
+  border-radius: 16px;
+  outline: none;
+}
