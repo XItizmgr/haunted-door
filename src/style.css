@@ -1,9 +1,46 @@
 :root {
+  --bg-color: rgb(7, 7, 7);
+
+  --color-red-dark: #3d0808;
+  --color-red: #7a1010;
+  --color-red-glow: #a81717;
+
+  --txt-color: #d8d0c2;
+  --txt-muted-color: #77706a;
+
+  --metal-feel-color: #4c4843;
+  --light-metal-color: #777169;
+
+  /* effects */
+  --color-shadow: rgba(0, 0, 0, 0.85);
+  --color-black-overlay: rgba(0, 0, 0, 0.7);
+
+  --heading-font: "Cinzel", serif;
+  --font-body: "Inter", sans-serif;
 }
 
-
-body {
+*,
+*::after,
+*::before {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+app {
+  min-height: 100vh;
 }
 
-
+.door-container{
+  width: 320px;
+  height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3d0808;
+  perspective: 1000px;
+}
