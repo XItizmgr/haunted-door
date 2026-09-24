@@ -2,21 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>haunted-door</title>
+    <title>Haunted Door</title>
   </head>
   <body>
     <div id="app">
       <span class="time">11:59 PM</span>
       <div class="intro-message">
-        <p class="main-msg"> you shouldn't be here</p>
-        <p class="sub-msg"> You arrived earlier than expected</p>
+        <p class="main-msg">YOU SHOULDN'T BE HERE</p>
+        <p class="sub-msg">You arrived earlier than expected.</p>
       </div>
       <div class="door-container">
         <div class="door-frame">
           <div class="red-light"></div>
+
           <div class="door">
+            <!-- SCRATCHES -->
             <div class="scratches s1"></div>
             <div class="scratches s2"></div>
             <div class="scratches s3"></div>
@@ -25,14 +26,19 @@
             <div class="scratches s6"></div>
             <div class="scratches s7"></div>
             <div class="scratches s8"></div>
+
+            <!-- PANELS -->
             <div class="door-panel door-panel-top"></div>
             <div class="door-panel door-panel-bottom"></div>
+
+            <!-- HANDLE -->
             <div class="door-handle">
               <div class="handle"></div>
             </div>
           </div>
         </div>
-        <button class="open-btn">open the door</button>
+
+        <button class="open-btn">OPEN THE DOOR</button>
       </div>
       <div class="audio-container">
         <span class="audio-label">Volume</span>
@@ -41,13 +47,19 @@
       </div>
       <div class="audio">
         <audio id="door-audio">
-          <source src="dragon-studio-opening-door-450444.mp3" />
+          <source src="Scary Door Creak Sound Effect.mp3" />
         </audio>
         <audio id="background-audio" loop>
-          <source src="Loyalty_Freak_Music_-_07_-_A_really_dark_alley(chosic.com).mp3" />
+          <source src="/Loyalty_Freak_Music_-_07_-_A_really_dark_alley(chosic.com).mp3" />
+        </audio>
+        <audio id="clock-audio" loop>
+          <source src="u_mx4xkr2bzy-slow-cinematic-clock-ticking-tension-2-323078.mp3" />
         </audio>
       </div>
       <div class="flashlight"></div>
+      <div class="jumpscare">
+        <img src="/crepppy pic.png" alt="Jumpscare" />
+      </div>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
