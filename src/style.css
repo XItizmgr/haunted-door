@@ -217,11 +217,12 @@ body {
   bottom: 0;
   width: 180px;
   height: 40px;
-  border: 1px solid #4a4540;
+  border: 5px solid #711111;
   background: #0c0a0a;
   color: var(--txt-color);
   font-family: "IBM Plex Mono", monospace;
   font-size: 13px;
+  border-radius: 0 50px 0 50px;
   letter-spacing: 2px;
   cursor: pointer;
   transition: 0.2s ease;
